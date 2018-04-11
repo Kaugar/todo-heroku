@@ -18,8 +18,6 @@ public class TodolistwithmsqlApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    todoInterface.save(new Todo("Buy Milk"));
-    todoInterface.save(new Todo("Go to school"));
 
   }
 }

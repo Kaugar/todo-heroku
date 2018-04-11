@@ -9,7 +9,7 @@
 <body>
 <h1>Edit this task:</h1>
 <p th:text="${todo.getTitle()}"></p>
-<form action="#" th:action="@{/edittask}" method="post">
+<form action="#" th:action="@{{id}/edittask}" method="post">
     <label for="name">Task title</label>
     <input type="text" id="name" name="newTitle" required />
     <input type="submit" value="modify" />
