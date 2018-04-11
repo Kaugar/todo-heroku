@@ -25,7 +25,7 @@
     <tr th:each="todo: ${todos}">
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
-        <td th:switch="${todos.isDone()}">
+        <td th:switch="${todo.isDone()}">
             <i th:case="true" class="fas fa-check"></i>
             <i th:case="false" class="fas fa-times"></i>
         </td>
