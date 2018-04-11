@@ -26,8 +26,8 @@
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
         <td th:switch="${todo.isDone()}">
-            <i th:case="true" class="glyphicon glyphicon-ok"></i>
-            <i th:case="false" class="glyphicon glyphicon-remove"></i>
+            <span th:case="true" class="glyphicon glyphicon-ok"></span>
+            <span th:case="false" class="glyphicon glyphicon-remove"></span>
         </td>
         <td th:switch="${todo.isUrgent()}">
             <i th:case="true" class="glyphicon glyphicon-ok">yes</i>
