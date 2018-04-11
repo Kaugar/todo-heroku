@@ -26,12 +26,12 @@
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
         <td th:switch="${todo.isDone()}">
-            <span th:case="true" class="glyphicon glyphicon-ok"></span>
-            <span th:case="false" class="glyphicon glyphicon-remove"></span>
+            <i th:case="true" class="glyphicon glyphicon-ok"></i>
+            <i th:case="false" class="glyphicon glyphicon-remove"></i>
         </td>
-        <td th:switch="${todo.isUrgent()}"> 
-            <span th:case="true" class="glyphicon glyphicon-ok"></span>
-            <span th:case="false" class="glyphicon glyphicon-remove"></span>
+        <td th:switch="${todo.isUrgent()}">
+            <i th:case="true" class="glyphicon glyphicon-ok"></i>
+            <i th:case="false" class="glyphicon glyphicon-remove"></i>
         </td>
         <a th:href="'/' + ${todo.getId()} + '/delete'" class="btn btn-danger">Delete</a>
          </td>
