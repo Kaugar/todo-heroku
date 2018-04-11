@@ -46,8 +46,10 @@ public class TodoController {
   }
 
   @PostMapping (value = "/edittask/{id}")
-  public String editTask (@ModelAttribute(name = "newTitle") String newTitleOfTask, @PathVariable(name = "id") Long id){
+  public String editTask (@ModelAttribute(name = "newTitle") String newTitleOfTask, Boolean urgent, Boolean done,  @PathVariable(name = "id") Long id){
     todoInterface.findById(id).get().setTitle(newTitleOfTask);
+    todoInterface.findById(id).get().setDone(done);
+    todoInterface.findById(id).get().setUrgent(urgent);
     todoInterface.save(todoInterface.findById(id).get());
     return "redirect:/todo";
   }

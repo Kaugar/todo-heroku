@@ -10,8 +10,13 @@
 <h1>Edit this task:</h1>
 <p th:text="${todo.getTitle()}"></p>
 <form action="#" th:action="@{'/edittask/'+ ${todo.id}}" method="post">
-    Todo description:
+    Todo description:<br>
     <input type="text" name="newTitle" th:placeholder="${todo.title}" required />
+    Urgent:<br>
+    <input type="checkbox" th:checked="${todo.urgent}" name="urgent"><br>
+    Done:<br>
+    <input type="checkbox" th:checked="${todo.done}" name="done"><br>
+
     <input type="submit" value="modify" />
 </form>
 <br>
