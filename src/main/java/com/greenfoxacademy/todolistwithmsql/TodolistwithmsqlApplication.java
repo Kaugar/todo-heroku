@@ -1,5 +1,6 @@
 package com.greenfoxacademy.todolistwithmsql;
 
+import com.greenfoxacademy.todolistwithmsql.models.Todo;
 import com.greenfoxacademy.todolistwithmsql.repository.TodoInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,7 +18,8 @@ public class TodolistwithmsqlApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-
+    todoInterface.save(new Todo("Buy Milk"));
+    todoInterface.save(new Todo("Go to school"));
 
   }
 }

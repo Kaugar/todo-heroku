@@ -7,7 +7,7 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <introspection-schemas>d4m5r6nm9p1tlb:public</introspection-schemas>
+      <introspection-schemas>d4m5r6nm9p1tlb:public,todo</introspection-schemas>
     </data-source>
   </component>
 </project>
