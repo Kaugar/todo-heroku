@@ -25,7 +25,10 @@
     <tr th:each="todo: ${todos}">
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
-        <td th:text="${todo.isDone()}"><span class="icon-trophy"></span></td>
+        <td th:switch="${todos.isDone()}">
+            <i th:case="true" class="fas fa-check"></i>
+            <i th:case="false" class="fas fa-times"></i>
+        </td>
         <td th:text="${todo.isUrgent()}"> </td>
         <td>
         <a th:href="'/' + ${todo.getId()} + '/delete'" class="btn btn-danger">Delete</a>
