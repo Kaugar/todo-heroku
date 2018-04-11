@@ -11,7 +11,7 @@
 <p th:text="${todo.getTitle()}"></p>
 <form action="#" th:action="@{'/edittask/'+ ${todo.id}}" method="post">
     Todo description:
-    <input type="text" name="title" th:placeholder="${todo.title}" required />
+    <input type="text" name="newTitle" th:placeholder="${todo.title}" required />
     <input type="submit" value="modify" />
 </form>
 <br>
