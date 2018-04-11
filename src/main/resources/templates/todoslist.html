@@ -30,8 +30,8 @@
             <i th:case="false" class="glyphicon glyphicon-remove"></i>
         </td>
         <td th:switch="${todo.isUrgent()}">
-            <i th:case="true" class="glyphicon glyphicon-ok"></i>
-            <i th:case="false" class="glyphicon glyphicon-remove"></i>
+            <i th:case="'true'" class="glyphicon glyphicon-ok"></i>
+            <i th:case="'false'" class="glyphicon glyphicon-remove"></i>
         </td>
         <td>
         <a th:href="'/' + ${todo.getId()} + '/delete'" class="btn btn-danger">Delete</a>
