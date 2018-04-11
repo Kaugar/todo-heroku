@@ -38,6 +38,17 @@ public class TodoController {
     todoInterface.deleteById(id);
     return "redirect:/todo";
   }
+  @GetMapping (value = "/{id}/edittask")
+  public String editTaskPage (Model model, @PathVariable(name = "id") Long id){
+    model.addAttribute("todo", todoInterface.findById(id));
+    return "edittask";
+  }
+  @PostMapping (value = "/{id}/edittask")
+  public String editTask (@ModelAttribute(name = "newTitle") String newTitleOfTask,@PathVariable(name = "id") Long id){
+    todoInterface.findById(id).get().setTitle(newTitleOfTask);
+    todoInterface.save(todoInterface.findById(id).get());
+    return "redirect:/todo";
+  }
 
   @GetMapping(value ={ "/", "/list"})
   @ResponseBody
