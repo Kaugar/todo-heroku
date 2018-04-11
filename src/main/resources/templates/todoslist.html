@@ -26,8 +26,8 @@
         <td th:text="${todo.getId()}"></td>
         <td th:text="${todo.getTitle()}"></td>
         <td th:switch="${todo.isDone()}">
-            <i th:case="true" class="fas fa-check"></i>
-            <i th:case="false" class="fas fa-times"></i>
+            <i th:case="true" class="glyphicon glyphicon-ok"></i>
+            <i th:case="false" class="glyphicon glyphicon-remove"></i>
         </td>
         <td th:text="${todo.isUrgent()}"> </td>
         <td>
