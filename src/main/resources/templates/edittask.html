@@ -12,12 +12,13 @@
 <form action="#" th:action="@{'/edittask/'+ ${todo.id}}" method="post">
     Todo description:<br>
     <input type="text" name="newTitle" th:placeholder="${todo.title}" required />
-    Urgent:<br>
+    <br>Urgent:<br>
     <input type="checkbox" th:checked="${todo.urgent}" name="urgent"><br>
-    Done:<br>
+    <br>Done:<br>
     <input type="checkbox" th:checked="${todo.done}" name="done"><br>
-
-    <input type="submit" value="modify" />
+    <div class="btn-toolbar">
+    <input type="submit" class="btn btn-primary" value="modify" /><a href="/todo/" class="btn btn-primary">Cancel</a>
+        <div/>
 </form>
 <br>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
