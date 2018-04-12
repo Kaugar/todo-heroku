@@ -24,7 +24,7 @@ public class TodoController {
     return "todoslist";
   }
   @PostMapping (value = "/todo")
-  public String search (Model model, @PathVariable(name = "text") String text){
+  public String search (Model model, @ModelAttribute(name = "text") String text){
     model.addAttribute("todos", todoInterface.findByTitle(text));
     return "todolist";
   }
