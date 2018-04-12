@@ -15,6 +15,7 @@ public class TodoController {
 
   @Autowired
   TodoInterface todoInterface;
+  @Autowired
   AssigneeRepo assigneeRepo;
 
   @GetMapping(value = "/todo")
@@ -35,7 +36,7 @@ public class TodoController {
 
   @GetMapping (value = "/assignees")
   public String listAssignees (Model model){
-    model.addAttribute("assignees", assigneeRepo.findAll());
+      model.addAttribute("assignees", assigneeRepo.findAll());
     return "assignees";
   }
 
