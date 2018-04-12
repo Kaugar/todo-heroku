@@ -26,17 +26,20 @@ public class TodoController {
     }
     return "todoslist";
   }
+
   @PostMapping (value = "/todo")
   public String search (Model model, @ModelAttribute(name = "text") String text){
     model.addAttribute("todos", todoInterface.findByTitleIgnoreCaseContaining(text));
     return "todoslist";
   }
+
   @GetMapping (value = "/assignees")
   public String listAssignees (Model model){
     model.addAttribute("assignees", assigneeRepo.findAll());
     return "assignees";
   }
-  @PostMapping (value = "/addAssignees")
+
+  @PostMapping (value = "/assignees")
   public String addAssignees (Model model, @ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email){
     model.addAttribute("assignees", assigneeRepo.save(new Assignee(name, email)));
     return "assignees";
@@ -46,7 +49,7 @@ public class TodoController {
   public String addTask (){
   return "addtask";
   }
-  
+
   @PostMapping (value = "/addnewtask")
   public String addNewTask (Model model, @ModelAttribute(name = "titleOfTask") String titleOfTask){
     model.addAttribute("todos", todoInterface.save(new Todo(titleOfTask)));
