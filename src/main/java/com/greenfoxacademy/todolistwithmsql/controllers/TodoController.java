@@ -61,7 +61,7 @@ public class TodoController {
     return "redirect:/assignees";
   }
 
-  @GetMapping(value = "/{id}/editassigne")
+  @GetMapping(value = "/{id}/editassignee")
   public String edit(@PathVariable(name = "id") Long id, Model model) {
     model.addAttribute("assignee", assigneeRepo.findById(id).get());
     return "editassignee";

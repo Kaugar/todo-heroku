@@ -91,8 +91,8 @@
       <file leaf-file-name="TodoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+            <state relative-caret-position="104">
+              <caret line="63" column="41" lean-forward="false" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
               <folding>
                 <element signature="e#1292#1293#0" expanded="true" />
                 <element signature="e#1318#1319#0" expanded="true" />
@@ -104,8 +104,8 @@
       <file leaf-file-name="editassignee.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editassignee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="375">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -134,8 +134,8 @@
       <file leaf-file-name="assigneeslist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/assigneeslist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="248">
+              <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -901,12 +901,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523440594380</updated>
-      <workItem from="1523440598464" duration="37867000" />
+      <workItem from="1523440598464" duration="38150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37867000" />
+    <option name="totallyTimeSpent" value="38150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="877" extended-state="0" />
@@ -1082,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/assigneeslist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/todoslist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1108,16 +1100,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editassignee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="375">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/assigneeslist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+        <state relative-caret-position="104">
+          <caret line="63" column="41" lean-forward="false" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
           <folding>
             <element signature="e#1292#1293#0" expanded="true" />
             <element signature="e#1318#1319#0" expanded="true" />
