@@ -17,7 +17,7 @@ public class TodoController {
   @GetMapping(value = "/todo")
   public String todo(Model model, @RequestParam (name = "isActive", required = false) Boolean isDone ){
     if(isDone == null){
-      model.addAttribute("todos", todoInterface.findAll());
+      model.addAttribute("todos", todoInterface.findAllByOrderByIdAsc());
     } else {
       model.addAttribute("todos", todoInterface.findByDone(!isDone));
     }
