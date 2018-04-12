@@ -88,7 +88,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TodoController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TodoController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
@@ -131,7 +131,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assigneeslist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="assigneeslist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/assigneeslist.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -650,8 +650,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/assignees.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editassigne.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editassignee.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/assigneeslist.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java" />
       </list>
     </option>
   </component>
@@ -901,12 +901,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523440594380</updated>
-      <workItem from="1523440598464" duration="38614000" />
+      <workItem from="1523440598464" duration="38736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38614000" />
+    <option name="totallyTimeSpent" value="38736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="877" extended-state="0" />
@@ -1098,17 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-          <folding>
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editassignee.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1122,6 +1111,17 @@
         <state relative-caret-position="308">
           <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+          <folding>
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
