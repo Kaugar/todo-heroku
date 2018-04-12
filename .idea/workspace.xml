@@ -92,8 +92,8 @@
       <file leaf-file-name="TodoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+            <state relative-caret-position="128">
+              <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="64" />
               <folding>
                 <element signature="e#1292#1293#0" expanded="true" />
                 <element signature="e#1318#1319#0" expanded="true" />
@@ -105,8 +105,8 @@
       <file leaf-file-name="editassignee.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editassignee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -901,12 +901,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523440594380</updated>
-      <workItem from="1523440598464" duration="36940000" />
+      <workItem from="1523440598464" duration="37262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36940000" />
+    <option name="totallyTimeSpent" value="37262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="877" extended-state="0" />
@@ -1108,8 +1108,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        <state relative-caret-position="128">
+          <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="64" />
           <folding>
             <element signature="e#1292#1293#0" expanded="true" />
             <element signature="e#1318#1319#0" expanded="true" />
@@ -1119,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/editassignee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="255">
+          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding />
         </state>
       </provider>

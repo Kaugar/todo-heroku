@@ -68,7 +68,7 @@ public class TodoController {
   }
 
   @PostMapping("{id}/editassigne/")
-  public String update(@ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email, @PathVariable(name = "id") Long id) {
+  public String update(@ModelAttribute(name = "newNameOfAssignee") String name, @ModelAttribute(name = "email") String email, @PathVariable(name = "id") Long id) {
     assigneeRepo.findById(id).get().setName(name);
     assigneeRepo.findById(id).get().setEmail(email);
     assigneeRepo.save(assigneeRepo.findById(id).get());

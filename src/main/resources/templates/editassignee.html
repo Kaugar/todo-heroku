@@ -11,7 +11,7 @@
 <p th:text="${assignee.getName()}"></p>
 <form action="#" th:action="@{${assignee.getId()} + '/editassignee/'}" method="post">
     Assignee name:<br>
-    <input type="text" name="name" th:placeholder="${assignee.getName()}" required />
+    <input type="text" name="newNameOfAssignee" th:placeholder="${assignee.getName()}" required />
     <br>Assignee email:<br>
     <input type="text" name="email" th:placeholder="${assignee.getEmail()}" required />
     <div class="btn-toolbar">
