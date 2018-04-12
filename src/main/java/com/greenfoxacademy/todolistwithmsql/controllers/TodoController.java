@@ -46,6 +46,19 @@ public class TodoController {
     return "redirect:/assignees";
   }
 
+  @GetMapping("/editassigne/{id}")
+  public String edit(@PathVariable long id, Model model) {
+    model.addAttribute("entry", assigneeRepo.findById(id));
+    return "edit";
+  }
+  @PostMapping("/editassigne/{id}")
+  public String update(@ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email, @PathVariable(name = "id") Long id) {
+    assigneeRepo.findById(id).get().setName(name);
+    assigneeRepo.findById(id).get().setEmail(email);
+    assigneeRepo.save(assigneeRepo.findById(id).get());
+    return "redirect:/assignees";
+  }
+
   @GetMapping (value = "/addnewtask")
   public String addTask (){
   return "addtask";

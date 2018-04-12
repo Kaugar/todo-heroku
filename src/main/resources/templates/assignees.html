@@ -12,10 +12,11 @@
     <th>Name</th>
     <th>Email</th>
 </tr>
-<tr th:each="assignees: ${assignees}">
-    <td th:text="${assignees.getId()}"></td>
-    <td th:text="${assignees.getName()}"></td>
-    <td th:text="${assignees.getEmail()}"></td>
+<tr th:each="assignee: ${assignees}">
+    <td th:text="${assignee.getId()}"></td>
+    <td th:text="${assignee.getName()}"></td>
+    <td th:text="${assignee.getEmail()}"></td>
+    <td><a th:href="${'/editassigne/'+ assignee.getId()}">Edit</a></td>
 </tr>
 <br>
 <form action="#" th:action="@{/assignees}" method="post">
