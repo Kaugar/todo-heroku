@@ -33,6 +33,21 @@ public class TodoController {
     model.addAttribute("todos", todoInterface.findByTitleIgnoreCaseContaining(text));
     return "todoslist";
   }
+  @GetMapping (value = "/addnewtask")
+  public String addTask (){
+    return "addtask";
+  }
+
+  @PostMapping (value = "/addnewtask")
+  public String addNewTask (Model model, @ModelAttribute(name = "titleOfTask") String titleOfTask){
+    model.addAttribute("todos", todoInterface.save(new Todo(titleOfTask)));
+    return "redirect:/todo";
+  }
+  @GetMapping (value = "/{id}/delete")
+  public String deleteTask (@PathVariable(name = "id") Long id){
+    todoInterface.deleteById(id);
+    return "redirect:/todo";
+  }
 
   @GetMapping (value = "/assignees")
   public String listAssignees (Model model){
@@ -47,8 +62,8 @@ public class TodoController {
   }
 
   @GetMapping("/editassigne/{id}")
-  public String edit(@PathVariable long id, Model model) {
-    model.addAttribute("assignee", assigneeRepo.findById(id));
+  public String edit(@PathVariable(name = "id") Long id, Model model) {
+    model.addAttribute("assignee", assigneeRepo.findById(id).get());
     return "editassignee";
   }
 
@@ -60,21 +75,6 @@ public class TodoController {
     return "redirect:/assignees";
   }
 
-  @GetMapping (value = "/addnewtask")
-  public String addTask (){
-  return "addtask";
-  }
-
-  @PostMapping (value = "/addnewtask")
-  public String addNewTask (Model model, @ModelAttribute(name = "titleOfTask") String titleOfTask){
-    model.addAttribute("todos", todoInterface.save(new Todo(titleOfTask)));
-    return "redirect:/todo";
-  }
-  @GetMapping (value = "/{id}/delete")
-  public String deleteTask (@PathVariable(name = "id") Long id){
-    todoInterface.deleteById(id);
-    return "redirect:/todo";
-  }
 
   @GetMapping (value = "/{id}/edittask")
   public String editTaskPage (Model model, @PathVariable(name = "id") Long id){
