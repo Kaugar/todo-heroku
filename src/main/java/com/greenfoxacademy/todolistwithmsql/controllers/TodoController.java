@@ -1,7 +1,9 @@
 package com.greenfoxacademy.todolistwithmsql.controllers;
 
 
+import com.greenfoxacademy.todolistwithmsql.models.Assignee;
 import com.greenfoxacademy.todolistwithmsql.models.Todo;
+import com.greenfoxacademy.todolistwithmsql.repository.AssigneeRepo;
 import com.greenfoxacademy.todolistwithmsql.repository.TodoInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ public class TodoController {
 
   @Autowired
   TodoInterface todoInterface;
+  AssigneeRepo assigneeRepo;
 
   @GetMapping(value = "/todo")
   public String todo(Model model, @RequestParam (name = "isActive", required = false) Boolean isDone ){
@@ -28,11 +31,22 @@ public class TodoController {
     model.addAttribute("todos", todoInterface.findByTitleIgnoreCaseContaining(text));
     return "todoslist";
   }
+  @GetMapping (value = "/assignees")
+  public String listAssignees (Model model){
+    model.addAttribute("assignees", assigneeRepo.findAll());
+    return "assignees";
+  }
+  @PostMapping (value = "/addAssignees")
+  public String addAssignees (Model model, @ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email){
+    model.addAttribute("assignees", assigneeRepo.save(new Assignee(name, email)));
+    return "assignees";
+  }
 
   @GetMapping (value = "/addnewtask")
   public String addTask (){
   return "addtask";
   }
+  
   @PostMapping (value = "/addnewtask")
   public String addNewTask (Model model, @ModelAttribute(name = "titleOfTask") String titleOfTask){
     model.addAttribute("todos", todoInterface.save(new Todo(titleOfTask)));

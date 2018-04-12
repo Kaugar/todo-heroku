@@ -13,9 +13,9 @@
     <th>Email</th>
 </tr>
 <tr th:each="assignees: ${assignees}">
-    <td th:text="${todo.getId()}"></td>
-    <td th:text="${todo.getTitle()}"></td>
-    <td th:text="${todo.getTitle()}"></td>
+    <td th:text="${assignees.getId()}"></td>
+    <td th:text="${assignees.getName()}"></td>
+    <td th:text="${assignees.getEmail()}"></td>
 </tr>
 <br>
 <form action="#" th:action="@{/addAssignee}" method="post">
