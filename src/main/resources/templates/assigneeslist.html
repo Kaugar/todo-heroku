@@ -17,6 +17,7 @@
     <td th:text="${assignee.getName()}"></td>
     <td th:text="${assignee.getEmail()}"></td>
     <td><a th:href="'/' + ${assignee.getId()} + '/editassignee'">Edit</a></td>
+    <td><a th:href="'/' + ${todo.getId()} + '/deleteAssignee'" class="btn btn-danger">Delete</a></td>
 </tr>
 <br>
 <form action="#" th:action="@{/assignees}" method="post">

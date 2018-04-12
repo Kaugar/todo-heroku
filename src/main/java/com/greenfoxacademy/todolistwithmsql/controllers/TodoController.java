@@ -75,6 +75,11 @@ public class TodoController {
     return "redirect:/assignees";
   }
 
+  @GetMapping (value = "/{id}/assigneeDelete")
+  public String deleteAssignee (@PathVariable(name = "id") Long id){
+    todoInterface.deleteById(id);
+    return "redirect:/assignees";
+  }
 
   @GetMapping (value = "/{id}/edittask")
   public String editTaskPage (Model model, @PathVariable(name = "id") Long id){
