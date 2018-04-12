@@ -23,7 +23,7 @@ public class TodoController {
     }
     return "todoslist";
   }
-  @PostMapping (value = "/searchtask/{text}")
+  @GetMapping (value = "/searchtask/{text}")
   public String search (Model model, @PathVariable(name = "text") String text){
     todoInterface.findByTitle(text);
     return "redirect:/todo";
