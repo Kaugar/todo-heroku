@@ -9,7 +9,7 @@
 <body>
 <h1>Edit this assignee:</h1>
 <p th:text="${assignee.get().getName()}"></p>
-<form action="#" th:action="@{'/editassignee/'+ ${assignee.get().getId()}}" method="post">
+<form action="#" th:action="@{${assignee.get().getId()} + '/editassignee/'}" method="post">
     Assignee name:<br>
     <input type="text" name="name" th:placeholder="${assignee.get().getName()}" required />
     <br>Assignee email:<br>
