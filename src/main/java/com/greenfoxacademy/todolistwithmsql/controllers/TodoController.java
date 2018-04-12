@@ -48,8 +48,8 @@ public class TodoController {
 
   @GetMapping("/editassigne/{id}")
   public String edit(@PathVariable long id, Model model) {
-    model.addAttribute("entry", assigneeRepo.findById(id));
-    return "edit";
+    model.addAttribute("assignee", assigneeRepo.findById(id));
+    return "editassignee";
   }
   @PostMapping("/editassigne/{id}")
   public String update(@ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email, @PathVariable(name = "id") Long id) {
