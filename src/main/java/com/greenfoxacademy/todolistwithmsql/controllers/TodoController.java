@@ -42,7 +42,7 @@ public class TodoController {
   @PostMapping (value = "/assignees")
   public String addAssignees (Model model, @ModelAttribute(name = "name") String name, @ModelAttribute(name = "email") String email){
     model.addAttribute("assignees", assigneeRepo.save(new Assignee(name, email)));
-    return "assignees";
+    return "redirect:/assignees";
   }
 
   @GetMapping (value = "/addnewtask")
