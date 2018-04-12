@@ -11,11 +11,11 @@
 <p th:text="${assignee.get().getName()}"></p>
 <form action="#" th:action="@{'/editassignee/'+ ${assignee.get().getId()}}" method="post">
     Assignee name:<br>
-    <input type="text" name="newTitle" th:placeholder="${assignee.get().getName()}" required />
+    <input type="text" name="name" th:placeholder="${assignee.get().getName()}" required />
     <br>Assignee email:<br>
-    <input type="text" name="newTitle" th:placeholder="${assignee.get().getEmail()}" required />
+    <input type="text" name="email" th:placeholder="${assignee.get().getEmail()}" required />
     <div class="btn-toolbar">
-        <input type="submit" class="btn btn-primary" value="modify" /><a href="/todo/" class="btn btn-primary">Cancel</a>
+        <input type="submit" class="btn btn-primary" value="modify" /><a href="/assignees/" class="btn btn-primary">Cancel</a>
         <div/>
 </form>
 <br>
