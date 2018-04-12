@@ -61,13 +61,13 @@ public class TodoController {
     return "redirect:/assignees";
   }
 
-  @GetMapping("/editassigne/{id}")
+  @GetMapping("/{id}/editassigne")
   public String edit(@PathVariable(name = "id") Long id, Model model) {
     model.addAttribute("assignee", assigneeRepo.findById(id).get());
     return "editassignee";
   }
 
-  @PostMapping("{id}/editassigne/")
+  @PostMapping("/editassignee/{id}")
   public String update(@ModelAttribute(name = "newNameOfAssignee") String name, @ModelAttribute(name = "email") String email, @PathVariable(name = "id") Long id) {
     assigneeRepo.findById(id).get().setName(name);
     assigneeRepo.findById(id).get().setEmail(email);
