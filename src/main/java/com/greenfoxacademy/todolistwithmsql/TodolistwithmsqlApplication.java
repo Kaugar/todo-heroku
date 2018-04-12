@@ -22,6 +22,5 @@ public class TodolistwithmsqlApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    assigneeRepo.save(new Assignee("hello", "ljsdngsd@sdjns.com"));
   }
 }
