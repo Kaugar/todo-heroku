@@ -37,7 +37,7 @@ public class TodoController {
   @GetMapping (value = "/assignees")
   public String listAssignees (Model model){
       model.addAttribute("assignees", assigneeRepo.findAll());
-    return "assignees";
+    return "assigneeslist";
   }
 
   @PostMapping (value = "/assignees")
