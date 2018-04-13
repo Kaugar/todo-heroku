@@ -30,7 +30,7 @@ public class TodoController {
 
   @PostMapping (value = "/todo")
   public String search (Model model, @ModelAttribute(name = "text") String text){
-    model.addAttribute("todos", todoInterface.findByTitleMatches(text));
+    model.addAttribute("todos", todoInterface.findByTitleStartsWith(text));
     return "todoslist";
   }
   @GetMapping (value = "/addnewtask")

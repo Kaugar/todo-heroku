@@ -84,11 +84,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+              <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1279#1280#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
+                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,8 +164,8 @@
       <file leaf-file-name="TodoInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -923,12 +923,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523440594380</updated>
-      <workItem from="1523440598464" duration="43477000" />
+      <workItem from="1523440598464" duration="43814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43477000" />
+    <option name="totallyTimeSpent" value="43814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="877" extended-state="0" />
@@ -1155,8 +1155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="120">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1164,11 +1164,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
-          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <caret line="32" column="68" lean-forward="false" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
           </folding>
         </state>
       </provider>
