@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Todo {
 
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue(strategy = GenerationType.AUTO)
   @Id
   private long id;
   private String title;
