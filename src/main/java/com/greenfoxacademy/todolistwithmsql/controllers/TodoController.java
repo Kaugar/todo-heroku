@@ -87,8 +87,9 @@ public class TodoController {
     return "edittask";
   }
 
-  /*@PostMapping (value = "/edittask/{id}")
-  public String editTask (@ModelAttribute(name = "newTitle") String newTitleOfTask, boolean urgent, boolean done,  @PathVariable(name = "id") Long id){
+ /* @PostMapping (value = "/edittask/{id}")
+  public String editTask (@ModelAttribute(name = "newTitle") String newTitleOfTask, boolean urgent, boolean done,
+                          @PathVariable(name = "id") Long id){
     todoInterface.findById(id).get().setTitle(newTitleOfTask);
     todoInterface.findById(id).get().setDone(done);
     todoInterface.findById(id).get().setUrgent(urgent);

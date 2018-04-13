@@ -9,7 +9,9 @@
 <body>
 <h1>Edit this task:</h1>
 <p th:text="${todo.getTitle()}"></p>
-<!--<form action="#" th:action="@{'/edittask/'+ ${todo.id}}" method="post">
+
+<!--
+<form action="#" th:action="@{'/edittask/'+ ${todo.id}}" method="post">
     Todo description:<br>
     <input type="text" name="newTitle" th:placeholder="${todo.title}" required />
     <br>Urgent:<br>
@@ -19,12 +21,13 @@
     <div class="btn-toolbar">
     <input type="submit" class="btn btn-primary" value="modify" /><a href="/todo/" class="btn btn-primary">Cancel</a>
         <div/>
-</form> -->
+</form>-->
+
 <form th:action="@{'/edittask/'+ ${todo.id}}" method="post" th:object="${todo}">
     Todo title: <input th:placeholder="${todo.getTitle()}" type="text" th:field="*{title}" />
     Urgent: <input type="checkbox" th:field="*{urgent}" />
     Done: <input type="checkbox" th:field="*{done}" />
-    <input type="submit" value="UPDATE" />
+    <input type="submit" value="UPDATE" class="btn btn-primary"/>
 </form>
 
 
