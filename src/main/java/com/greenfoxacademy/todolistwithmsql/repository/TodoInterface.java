@@ -10,6 +10,8 @@ public interface TodoInterface extends CrudRepository<Todo,Long> {
 
   List<Todo> findByDone (boolean done);
   List<Todo> findAllByOrderByIdAsc();
+
   List<Todo> findByTitle(String text);
+
   List<Todo> findByTitleIgnoreCaseContaining (String text);
 }

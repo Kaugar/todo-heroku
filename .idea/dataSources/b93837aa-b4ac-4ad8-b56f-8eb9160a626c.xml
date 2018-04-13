@@ -22328,8 +22328,8 @@
     </role>
     <schema id="4990" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-04-13.10:22:18.964</IntrospectionTimestamp>
-      <IntrospectionStateNumber>10944190</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-13.10:34:11.110</IntrospectionTimestamp>
+      <IntrospectionStateNumber>11172149</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -22350,53 +22350,97 @@
     </schema>
     <schema id="4996" parent="2" name="todo">
       <ObjectId>19289365</ObjectId>
-      <IntrospectionTimestamp>2018-04-11.13:02:25.129</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-04-13.10:34:11.110</IntrospectionTimestamp>
       <Visible>1</Visible>
     </schema>
-    <sequence id="4997" parent="4990" name="hibernate_sequence">
+    <sequence id="4997" parent="4990" name="assignee_id_seq">
+      <ObjectId>19360288</ObjectId>
+      <StateNumber>11172149</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="4998" parent="4990" name="hibernate_sequence">
       <ObjectId>19293697</ObjectId>
       <StateNumber>10944190</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="4998" parent="4990" name="todo">
+    <table id="4999" parent="4990" name="assignee">
+      <ObjectId>19360290</ObjectId>
+      <StateNumber>11172149</StateNumber>
+    </table>
+    <table id="5000" parent="4990" name="todo">
       <ObjectId>19293692</ObjectId>
       <StateNumber>10944189</StateNumber>
     </table>
-    <column id="4999" parent="4998" name="id">
+    <column id="5001" parent="4999" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>11172149</StateNumber>
+      <DefaultExpression>nextval(&apos;assignee_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>assignee_id_seq</SequenceName>
+    </column>
+    <column id="5002" parent="4999" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>11172149</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="5003" parent="4999" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>11172149</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="5004" parent="4999" name="assignee_pkey">
+      <ObjectId>19360297</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="5005" parent="4999" name="assignee_pkey">
+      <ObjectId>19360298</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>assignee_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="5006" parent="5000" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>10944189</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="5000" parent="4998" name="done">
+    <column id="5007" parent="5000" name="done">
       <Position>2</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>10944189</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="5001" parent="4998" name="title">
+    <column id="5008" parent="5000" name="title">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>10944189</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="5002" parent="4998" name="urgent">
+    <column id="5009" parent="5000" name="urgent">
       <Position>4</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>10944189</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="5003" parent="4998" name="todo_pkey">
+    <index id="5010" parent="5000" name="todo_pkey">
       <ObjectId>19293695</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="5004" parent="4998" name="todo_pkey">
+    <key id="5011" parent="5000" name="todo_pkey">
       <ObjectId>19293696</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>todo_pkey</UnderlyingIndexName>
