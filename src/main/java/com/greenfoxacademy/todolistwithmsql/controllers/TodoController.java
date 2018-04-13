@@ -95,6 +95,11 @@ public class TodoController {
     todoInterface.save(todoInterface.findById(id).get());
     return "redirect:/todo";
   }
+  @PostMapping (value = "/edittask/{id}")
+  public String editTask2 (Todo todo){
+    todoInterface.save(todo);
+    return "redirect:/todo";
+  }
 
   @GetMapping(value ={ "/", "/list"})
   @ResponseBody
