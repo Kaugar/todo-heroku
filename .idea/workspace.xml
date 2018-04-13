@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e819dbd1-0119-48a7-84c1-d7a0219ddf3e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b93837aa-b4ac-4ad8-b56f-8eb9160a626c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b93837aa-b4ac-4ad8-b56f-8eb9160a626c.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b93837aa-b4ac-4ad8-b56f-8eb9160a626c/storage_v2/_src_/database/d4m5r6nm9p1tlb.K1evZg/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/b93837aa-b4ac-4ad8-b56f-8eb9160a626c/storage_v2/_src_/database/d4m5r6nm9p1tlb.K1evZg/schema/public.abK9xQ.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java" />
     </list>
@@ -87,11 +84,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+              <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1305#1306#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -926,12 +923,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523440594380</updated>
-      <workItem from="1523440598464" duration="43217000" />
+      <workItem from="1523440598464" duration="43477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43217000" />
+    <option name="totallyTimeSpent" value="43477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="23" width="1389" height="877" extended-state="0" />
@@ -1159,7 +1156,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/repository/TodoInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1167,11 +1164,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greenfoxacademy/todolistwithmsql/controllers/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
-          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1305#1306#0" expanded="true" />
           </folding>
         </state>
       </provider>
